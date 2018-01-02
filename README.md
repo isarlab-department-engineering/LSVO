@@ -26,8 +26,6 @@ We suggest to create a virtual environment to install the project dependencies:
     #Install tensorflow with GPU support
     pip3 install --upgrade tensorflow-gpu
     
-    
-    
-    
-
+    #Install Keras
+    pip3 install keras
     
