@@ -11,6 +11,8 @@ The LS-VO code has thee following dependencies:
 * Keras framework https://keras.io/ 
 * Tensorflow as the backend framework for Keras https://www.tensorflow.org/. 
 * Python 3.5. 
+* The Robotic Toolbox (already provided in this repository) https://github.com/petercorke/robotics-toolbox-python
+* The h2py library to process HDF5 files.
 
 We suggest to create a virtual environment to install the project dependencies:
     
@@ -28,4 +30,7 @@ We suggest to create a virtual environment to install the project dependencies:
     
     #Install Keras
     pip3 install keras
+    
+    #Install h5py
+    pip3 install h5py
     
