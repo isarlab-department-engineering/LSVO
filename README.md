@@ -1,11 +1,13 @@
 # LSVO
 LS-VO code repository
 
-# INTRODUCTION
+# Introduction
 
 This repository contains the source code of the LS-VO approach described in the article "LS-VO: Learning Dense Optical Subspace for Robust Visual Odometry Estimation" by Gabriele Costante and Thomas A. Ciarfuglia
 
-# ENVIRONMENT SETUP
+If you use LSVO in an academic work, please cite the Robotics and Autonomous Letter (RAL) version which will be available soon.
+
+# Environment Setup
 
 The LS-VO code has thee following dependencies: 
 * Keras framework https://keras.io/ 
@@ -53,3 +55,37 @@ You can download them with the following commands:
     wget http://sira.diei.unipg.it/supplementary/lsvo_ral2018/weights.tar.gz
     
 After unpacking them change the 'data_set_dir' argument and the 'weights_dir' argument in the config.py file to match the directories where you unpacked the datasets and the weights file 
+
+# Testing the Models
+
+To test the model and reproduce the results of the paper you can use the following scripts
+
+    #First, activate the virtual environment
+    source ~/lsvo-environment/bin/activate
+    
+    #Go to the directory of the project
+    cd /home/user/LSVO
+    
+    #Kitti d1 test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
+    python3 -m app.kitti_test_dns_1
+    
+    #Kitti d2 test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
+    python3 -m app.kitti_test_dns_2
+    
+    #Kitti d2 +  blur test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
+    python3 -m app.kitti_test_dns_2_blurred
+    
+    #Malaga d1 test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
+    python3 -m app.malaga_test_dns_1
+    
+    #Malaga d2 test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
+    python3 -m app.malaga_test_dns_2
+    
+    #Malaga d2 + blur test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
+    python3 -m app.malaga_test_dns_2_blurred
+    
+Each test generates a directory inside app/results/trajectories named multi_task_{dataset}_{exp_type} where the computed transformation are stored. If you want to compute the errors as in the paper you need to download the kitti devkit from the KITTI Benchmark web page http://www.cvlibs.net/datasets/kitti/eval_odometry.php
+    
+# Soon available
+
+The code for training will be made available soon, as well as the images and the computed optical flow used for training the models.
