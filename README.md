@@ -84,7 +84,7 @@ To test the model and reproduce the results of the paper you can use the followi
     #Malaga d2 + blur test - change the config.strategy parameter in the file to switch between ST-VO and LS-VO
     python3 -m app.malaga_test_dns_2_blurred
     
-Each test generates a directory inside app/results/trajectories named multi_task_{dataset}_{exp_type} where the computed transformation are stored. If you want to compute the errors as in the paper you need to download the kitti devkit from the KITTI Benchmark web page http://www.cvlibs.net/datasets/kitti/eval_odometry.php
+Each test generates a directory inside results/trajectories named multi_task_{dataset}_{exp_type} where the computed transformation are stored. If you want to compute the errors as in the paper you need to download the kitti devkit from the KITTI Benchmark web page http://www.cvlibs.net/datasets/kitti/eval_odometry.php
     
 # Soon available
 
