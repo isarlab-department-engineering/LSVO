@@ -33,4 +33,11 @@ We suggest to create a virtual environment to install the project dependencies:
     
     #Install h5py
     pip3 install h5py
-    
+   
+# Dataset and model weights
+
+We provide the optical flow (currently only the Flownet-based ones) computed for the test sequences of each dataset. The archives contain the optical flow for the d1 tests (no downsampling), the d2 test (sub-sampled sequences) and the d2+blur tests (sub-sampled and blurred).
+We also provide the weights of the ST-VO(Flow) and the LS-VO(Flow) architectures for all the experiments in the paper.
+You can download them with the following commands:
+
+    #Download the optical flow for the KITTI test sequences (08, 09, 10)
