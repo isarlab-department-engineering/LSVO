@@ -41,3 +41,4 @@ We also provide the weights of the ST-VO(Flow) and the LS-VO(Flow) architectures
 You can download them with the following commands:
 
     #Download the optical flow for the KITTI test sequences (08, 09, 10)
+    wget http://sira.diei.unipg.it/supplementary/lsvo_ral2018/KITTI_RGB_dataset.tar.gz
