@@ -33,6 +33,9 @@ We suggest to create a virtual environment to install the project dependencies:
     
     #Install h5py
     pip3 install h5py
+    
+    #clone this repository 
+    git clone 
    
 # Dataset and model weights
 
@@ -42,3 +45,11 @@ You can download them with the following commands:
 
     #Download the optical flow for the KITTI test sequences (08, 09, 10)
     wget http://sira.diei.unipg.it/supplementary/lsvo_ral2018/KITTI_RGB_dataset.tar.gz
+    
+    #Download the optical flow for the Malaga test sequences (02, 03, 09)
+    wget http://sira.diei.unipg.it/supplementary/lsvo_ral2018/Malaga_dataset.tar.gz
+    
+    #Download the weights files
+    wget http://sira.diei.unipg.it/supplementary/lsvo_ral2018/weights.tar.gz
+    
+After unpacking them you 
