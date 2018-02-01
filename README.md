@@ -5,7 +5,7 @@ LS-VO code repository
 
 This repository contains the source code of the LS-VO approach described in the article "LS-VO: Learning Dense Optical Subspace for Robust Visual Odometry Estimation" by Gabriele Costante and Thomas A. Ciarfuglia
 
-If you use LSVO in an academic work, please cite the Robotics and Autonomous Letter (RAL) version which will be available soon.
+If you use LSVO in an academic work, please cite the Robotics and Autonomous Letter (RAL) version of the paper which will be available soon.
 
 # Environment Setup
 
