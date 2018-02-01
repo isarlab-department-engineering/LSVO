@@ -35,7 +35,7 @@ We suggest to create a virtual environment to install the project dependencies:
     pip3 install h5py
     
     #clone this repository 
-    git clone 
+    git clone https://github.com/isarlab-department-engineering/LSVO.git
    
 # Dataset and model weights
 
@@ -52,4 +52,4 @@ You can download them with the following commands:
     #Download the weights files
     wget http://sira.diei.unipg.it/supplementary/lsvo_ral2018/weights.tar.gz
     
-After unpacking them you 
+After unpacking them change the 'data_set_dir' argument and the 'weights_dir' argument in the config.py file to match the directories where you unpacked the datasets and the weights file 
